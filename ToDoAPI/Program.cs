@@ -9,7 +9,7 @@ builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
     {
-        policy.WithOrigins("OriginPolicy","http://todo.genecathcart.com", "http://localhost:3000").AllowAnyMethod();
+        policy.WithOrigins("OriginPolicy","http://todo.genecathcart.com", "http://localhost:3000").AllowAnyMethod().AllowAnyHeader();
     });
 });
 
